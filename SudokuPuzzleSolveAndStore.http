@@ -1,0 +1,9 @@
+@SudokuPuzzleSolveAndStore_HostAddress = https://localhost:7224
+
+GET {{SudokuPuzzleSolveAndStore_HostAddress}}/api/sudokusolver
+
+###
+
+GET {{SudokuPuzzleSolveAndStore_HostAddress}}/api/sudokusolver
+
+###
