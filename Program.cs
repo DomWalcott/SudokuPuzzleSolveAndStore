@@ -24,7 +24,8 @@ namespace SudokuPuzzleSolveAndStore
             }
 
             app.UseHttpsRedirection();
-
+            app.UseDefaultFiles();
+            app.UseStaticFiles();
             app.UseAuthorization();
 
 

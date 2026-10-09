@@ -1,0 +1,117 @@
+﻿<!DOCTYPE html>
+<html land="en-gb">
+<head>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="CSS/site.css" />
+    <title>Sudoku Solver</title>
+</head>
+<body>
+    <h1>Sudoku solver</h1>
+    <h2>Enter the numbers in the grid. Leave all unknown numbers blank.</h2>
+    <div class="OuterContainer">
+        <div class="Grid 1stRow" id="G1-1">
+            <div class="Cell"><input typeof="number" min="1" max="9" placeholder="0"></div>
+            <div class="Cell"><input typeof="number" min="1" max="9" placeholder="0"></div>
+            <div class="Cell"><input typeof="number" min="1" max="9" placeholder="0"></div>
+            <div class="Cell"><input typeof="number" min="1" max="9" placeholder="0"></div>
+            <div class="Cell"><input typeof="number" min="1" max="9" placeholder="0"></div>
+            <div class="Cell"><input typeof="number" min="1" max="9" placeholder="0"></div>
+            <div class="Cell"><input typeof="number" min="1" max="9" placeholder="0"></div>
+            <div class="Cell"><input typeof="number" min="1" max="9" placeholder="0"></div>
+            <div class="Cell"><input typeof="number" min="1" max="9" placeholder="0"></div>
+        </div>
+        <div class="Grid 1stRow" id="G1-2">
+            <div class="Cell"><input typeof="number" min="1" max="9" placeholder="0"></div>
+            <div class="Cell"><input typeof="number" min="1" max="9" placeholder="0"></div>
+            <div class="Cell"><input typeof="number" min="1" max="9" placeholder="0"></div>
+            <div class="Cell"><input typeof="number" min="1" max="9" placeholder="0"></div>
+            <div class="Cell"><input typeof="number" min="1" max="9" placeholder="0"></div>
+            <div class="Cell"><input typeof="number" min="1" max="9" placeholder="0"></div>
+            <div class="Cell"><input typeof="number" min="1" max="9" placeholder="0"></div>
+            <div class="Cell"><input typeof="number" min="1" max="9" placeholder="0"></div>
+            <div class="Cell"><input typeof="number" min="1" max="9" placeholder="0"></div>
+        </div>
+        <div class="Grid 1stRow" id="G1-3">
+            <div class="Cell"><input typeof="number" min="1" max="9" placeholder="0"></div>
+            <div class="Cell"><input typeof="number" min="1" max="9" placeholder="0"></div>
+            <div class="Cell"><input typeof="number" min="1" max="9" placeholder="0"></div>
+            <div class="Cell"><input typeof="number" min="1" max="9" placeholder="0"></div>
+            <div class="Cell"><input typeof="number" min="1" max="9" placeholder="0"></div>
+            <div class="Cell"><input typeof="number" min="1" max="9" placeholder="0"></div>
+            <div class="Cell"><input typeof="number" min="1" max="9" placeholder="0"></div>
+            <div class="Cell"><input typeof="number" min="1" max="9" placeholder="0"></div>
+            <div class="Cell"><input typeof="number" min="1" max="9" placeholder="0"></div>
+        </div>
+        <div class="Grid 2ndRow" id="G2-1">
+            <div class="Cell"><input typeof="number" min="1" max="9" placeholder="0"></div>
+            <div class="Cell"><input typeof="number" min="1" max="9" placeholder="0"></div>
+            <div class="Cell"><input typeof="number" min="1" max="9" placeholder="0"></div>
+            <div class="Cell"><input typeof="number" min="1" max="9" placeholder="0"></div>
+            <div class="Cell"><input typeof="number" min="1" max="9" placeholder="0"></div>
+            <div class="Cell"><input typeof="number" min="1" max="9" placeholder="0"></div>
+            <div class="Cell"><input typeof="number" min="1" max="9" placeholder="0"></div>
+            <div class="Cell"><input typeof="number" min="1" max="9" placeholder="0"></div>
+            <div class="Cell"><input typeof="number" min="1" max="9" placeholder="0"></div>
+        </div>
+        <div class="Grid 2ndRow" id="G2-2">
+            <div class="Cell"><input typeof="number" min="1" max="9" placeholder="0"></div>
+            <div class="Cell"><input typeof="number" min="1" max="9" placeholder="0"></div>
+            <div class="Cell"><input typeof="number" min="1" max="9" placeholder="0"></div>
+            <div class="Cell"><input typeof="number" min="1" max="9" placeholder="0"></div>
+            <div class="Cell"><input typeof="number" min="1" max="9" placeholder="0"></div>
+            <div class="Cell"><input typeof="number" min="1" max="9" placeholder="0"></div>
+            <div class="Cell"><input typeof="number" min="1" max="9" placeholder="0"></div>
+            <div class="Cell"><input typeof="number" min="1" max="9" placeholder="0"></div>
+            <div class="Cell"><input typeof="number" min="1" max="9" placeholder="0"></div>
+        </div>
+        <div class="Grid 2ndRow" id="G2-3">
+            <div class="Cell"><input typeof="number" min="1" max="9" placeholder="0"></div>
+            <div class="Cell"><input typeof="number" min="1" max="9" placeholder="0"></div>
+            <div class="Cell"><input typeof="number" min="1" max="9" placeholder="0"></div>
+            <div class="Cell"><input typeof="number" min="1" max="9" placeholder="0"></div>
+            <div class="Cell"><input typeof="number" min="1" max="9" placeholder="0"></div>
+            <div class="Cell"><input typeof="number" min="1" max="9" placeholder="0"></div>
+            <div class="Cell"><input typeof="number" min="1" max="9" placeholder="0"></div>
+            <div class="Cell"><input typeof="number" min="1" max="9" placeholder="0"></div>
+            <div class="Cell"><input typeof="number" min="1" max="9" placeholder="0"></div>
+        </div>
+        <div class="Grid 3rdRow" id="G3-1">
+            <div class="Cell"><input typeof="number" min="1" max="9" placeholder="0"></div>
+            <div class="Cell"><input typeof="number" min="1" max="9" placeholder="0"></div>
+            <div class="Cell"><input typeof="number" min="1" max="9" placeholder="0"></div>
+            <div class="Cell"><input typeof="number" min="1" max="9" placeholder="0"></div>
+            <div class="Cell"><input typeof="number" min="1" max="9" placeholder="0"></div>
+            <div class="Cell"><input typeof="number" min="1" max="9" placeholder="0"></div>
+            <div class="Cell"><input typeof="number" min="1" max="9" placeholder="0"></div>
+            <div class="Cell"><input typeof="number" min="1" max="9" placeholder="0"></div>
+            <div class="Cell"><input typeof="number" min="1" max="9" placeholder="0"></div>
+        </div>
+        <div class="Grid 3rdRow" id="G3-2">
+            <div class="Cell"><input typeof="number" min="1" max="9" placeholder="0"></div>
+            <div class="Cell"><input typeof="number" min="1" max="9" placeholder="0"></div>
+            <div class="Cell"><input typeof="number" min="1" max="9" placeholder="0"></div>
+            <div class="Cell"><input typeof="number" min="1" max="9" placeholder="0"></div>
+            <div class="Cell"><input typeof="number" min="1" max="9" placeholder="0"></div>
+            <div class="Cell"><input typeof="number" min="1" max="9" placeholder="0"></div>
+            <div class="Cell"><input typeof="number" min="1" max="9" placeholder="0"></div>
+            <div class="Cell"><input typeof="number" min="1" max="9" placeholder="0"></div>
+            <div class="Cell"><input typeof="number" min="1" max="9" placeholder="0"></div>
+        </div>
+        <div class="Grid 3rdRow" id="G3-3">
+            <div class="Cell"><input typeof="number" min="1" max="9" placeholder="0"></div>
+            <div class="Cell"><input typeof="number" min="1" max="9" placeholder="0"></div>
+            <div class="Cell"><input typeof="number" min="1" max="9" placeholder="0"></div>
+            <div class="Cell"><input typeof="number" min="1" max="9" placeholder="0"></div>
+            <div class="Cell"><input typeof="number" min="1" max="9" placeholder="0"></div>
+            <div class="Cell"><input typeof="number" min="1" max="9" placeholder="0"></div>
+            <div class="Cell"><input typeof="number" min="1" max="9" placeholder="0"></div>
+            <div class="Cell"><input typeof="number" min="1" max="9" placeholder="0"></div>
+            <div class="Cell"><input typeof="number" min="1" max="9" placeholder="0"></div>
+        </div>
+    </div>
+    <div class="SolveButton">
+        <button id="ButtonForSolving">Solve Puzzle</button>
+    </div>
+    
+</body>
+</html>
