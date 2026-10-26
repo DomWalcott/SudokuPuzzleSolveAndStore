@@ -110,7 +110,7 @@
                 <div class="Cell"><input id="80" typeof="number" min="1" max="9" ></div>
             </div>
         </div>
-        <div class="OuterContainer">
+        <div class="OuterContainer" id="resultsGrid" hidden>
             <div class="Grid">
                 <div class="Cell"  id="solution-0"></div>
                 <div class="Cell"  id="solution-1"></div>
@@ -261,6 +261,7 @@
             }
             const solvedPuzzle = await sendToApi(numbersForSolving);
             fillSolvedGrid(solvedPuzzle);
+            document.getElementById("resultsGrid").hidden = false;
         }
 
         //checks its an int between 0 and 9

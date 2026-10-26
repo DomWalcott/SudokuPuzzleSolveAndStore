@@ -19,6 +19,11 @@ h1, h2{
     border: 1px solid black;
     margin: 0 20px;
 }
+
+.OuterContainer[hidden]{
+    display: none;
+}
+
 .Grid {
     height: 180px;
     width: 180px;
@@ -37,6 +42,8 @@ h1, h2{
     margin: 0;
     align-content: center;
     justify-content:center;
+
+
     
 }
 input {
@@ -48,9 +55,16 @@ input {
     text-align: center;
     background: transparent;
     overflow: hidden;
+    font-size: 40px;
 }
 .SolveButton{
     display: flex;
     justify-content: center;
     margin-top: 1rem;
+}
+#resultsGrid{
+    text-align: center;
+    font-size: 40px;
+
+    
 }
