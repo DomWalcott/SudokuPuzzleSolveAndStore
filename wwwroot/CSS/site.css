@@ -4,7 +4,12 @@
 h1, h2{
     text-align: center;
 }
-
+.bothGrids{
+    display: flex;
+    justify-content: center;
+    margin-left: 400px;
+    margin: 0 5px;
+}
 .OuterContainer {
     display:inline-grid;
     grid-template-columns: auto auto auto;
@@ -12,6 +17,7 @@ h1, h2{
     background-color:antiquewhite;
     width: auto;
     border: 1px solid black;
+    margin: 0 20px;
 }
 .Grid {
     height: 180px;

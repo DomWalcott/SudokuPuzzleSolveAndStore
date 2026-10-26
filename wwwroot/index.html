@@ -8,117 +8,376 @@
 <body>
     <h1>Sudoku solver</h1>
     <h2>Enter the numbers in the grid. Leave all unknown numbers blank.</h2>
-    <div class="OuterContainer">
-        <div class="Grid 1stRow" id="G1-1">
-            <div class="Cell"><input id="0" typeof="number" min="1" max="9" placeholder="0"></div>
-            <div class="Cell"><input id="1" typeof="number" min="1" max="9" placeholder="0"></div>
-            <div class="Cell"><input id="2" typeof="number" min="1" max="9" placeholder="0"></div>
-            <div class="Cell"><input id="3" typeof="number" min="1" max="9" placeholder="0"></div>
-            <div class="Cell"><input id="4" typeof="number" min="1" max="9" placeholder="0"></div>
-            <div class="Cell"><input id="5" typeof="number" min="1" max="9" placeholder="0"></div>
-            <div class="Cell"><input id="6" typeof="number" min="1" max="9" placeholder="0"></div>
-            <div class="Cell"><input id="7" typeof="number" min="1" max="9" placeholder="0"></div>
-            <div class="Cell"><input id="8" typeof="number" min="1" max="9" placeholder="0"></div>
+    <div class="bothGrids">
+        <div class="OuterContainer">
+            <div class="Grid 1stRow" id="G1-1">
+                <div class="Cell"><input id="0" typeof="number" min="1" max="9" ></div>
+                <div class="Cell"><input id="1" typeof="number" min="1" max="9" ></div>
+                <div class="Cell"><input id="2" typeof="number" min="1" max="9" ></div>
+                <div class="Cell"><input id="9" typeof="number" min="1" max="9" ></div>
+                <div class="Cell"><input id="10" typeof="number" min="1" max="9" ></div>
+                <div class="Cell"><input id="11" typeof="number" min="1" max="9" ></div>
+                <div class="Cell"><input id="18" typeof="number" min="1" max="9" ></div>
+                <div class="Cell"><input id="19" typeof="number" min="1" max="9" ></div>
+                <div class="Cell"><input id="20" typeof="number" min="1" max="9" ></div>
+            </div>
+            <div class="Grid 1stRow" id="G1-2">
+                <div class="Cell"><input id="3" typeof="number" min="1" max="9" ></div>
+                <div class="Cell"><input id="4" typeof="number" min="1" max="9" ></div>
+                <div class="Cell"><input id="5" typeof="number" min="1" max="9" ></div>
+                <div class="Cell"><input id="12" typeof="number" min="1" max="9" ></div>
+                <div class="Cell"><input id="13" typeof="number" min="1" max="9" ></div>
+                <div class="Cell"><input id="14" typeof="number" min="1" max="9" ></div>
+                <div class="Cell"><input id="21" typeof="number" min="1" max="9" ></div>
+                <div class="Cell"><input id="22" typeof="number" min="1" max="9" ></div>
+                <div class="Cell"><input id="23" typeof="number" min="1" max="9" ></div>
+            </div>
+            <div class="Grid 1stRow" id="G1-3">
+                <div class="Cell"><input id="6" typeof="number" min="1" max="9" ></div>
+                <div class="Cell"><input id="7" typeof="number" min="1" max="9" ></div>
+                <div class="Cell"><input id="8" typeof="number" min="1" max="9" ></div>
+                <div class="Cell"><input id="15" typeof="number" min="1" max="9" ></div>
+                <div class="Cell"><input id="16" typeof="number" min="1" max="9" ></div>
+                <div class="Cell"><input id="17" typeof="number" min="1" max="9" ></div>
+                <div class="Cell"><input id="24" typeof="number" min="1" max="9" ></div>
+                <div class="Cell"><input id="25" typeof="number" min="1" max="9" ></div>
+                <div class="Cell"><input id="26" typeof="number" min="1" max="9" ></div>
+            </div>
+            <div class="Grid 2ndRow" id="G2-1">
+                <div class="Cell"><input id="27" typeof="number" min="1" max="9" ></div>
+                <div class="Cell"><input id="28" typeof="number" min="1" max="9" ></div>
+                <div class="Cell"><input id="29" typeof="number" min="1" max="9" ></div>
+                <div class="Cell"><input id="36" typeof="number" min="1" max="9" ></div>
+                <div class="Cell"><input id="37" typeof="number" min="1" max="9" ></div>
+                <div class="Cell"><input id="38" typeof="number" min="1" max="9" ></div>
+                <div class="Cell"><input id="45" typeof="number" min="1" max="9" ></div>
+                <div class="Cell"><input id="46" typeof="number" min="1" max="9" ></div>
+                <div class="Cell"><input id="47" typeof="number" min="1" max="9" ></div>
+            </div>
+            <div class="Grid 2ndRow" id="G2-2">
+                <div class="Cell"><input id="30" typeof="number" min="1" max="9" ></div>
+                <div class="Cell"><input id="31" typeof="number" min="1" max="9" ></div>
+                <div class="Cell"><input id="32" typeof="number" min="1" max="9" ></div>
+                <div class="Cell"><input id="39" typeof="number" min="1" max="9" ></div>
+                <div class="Cell"><input id="40" typeof="number" min="1" max="9" ></div>
+                <div class="Cell"><input id="41" typeof="number" min="1" max="9" ></div>
+                <div class="Cell"><input id="48" typeof="number" min="1" max="9" ></div>
+                <div class="Cell"><input id="49" typeof="number" min="1" max="9" ></div>
+                <div class="Cell"><input id="50" typeof="number" min="1" max="9" ></div>
+            </div>
+            <div class="Grid 2ndRow" id="G2-3">
+                <div class="Cell"><input id="33" typeof="number" min="1" max="9" ></div>
+                <div class="Cell"><input id="34" typeof="number" min="1" max="9" ></div>
+                <div class="Cell"><input id="35" typeof="number" min="1" max="9" ></div>
+                <div class="Cell"><input id="42" typeof="number" min="1" max="9" ></div>
+                <div class="Cell"><input id="43" typeof="number" min="1" max="9" ></div>
+                <div class="Cell"><input id="44" typeof="number" min="1" max="9" ></div>
+                <div class="Cell"><input id="51" typeof="number" min="1" max="9" ></div>
+                <div class="Cell"><input id="52" typeof="number" min="1" max="9" ></div>
+                <div class="Cell"><input id="53" typeof="number" min="1" max="9" ></div>
+            </div>
+            <div class="Grid 3rdRow" id="G3-1">
+                <div class="Cell"><input id="54" typeof="number" min="1" max="9" ></div>
+                <div class="Cell"><input id="55" typeof="number" min="1" max="9" ></div>
+                <div class="Cell"><input id="56" typeof="number" min="1" max="9" ></div>
+                <div class="Cell"><input id="63" typeof="number" min="1" max="9" ></div>
+                <div class="Cell"><input id="64" typeof="number" min="1" max="9" ></div>
+                <div class="Cell"><input id="65" typeof="number" min="1" max="9" ></div>
+                <div class="Cell"><input id="72" typeof="number" min="1" max="9" ></div>
+                <div class="Cell"><input id="73" typeof="number" min="1" max="9" ></div>
+                <div class="Cell"><input id="74" typeof="number" min="1" max="9" ></div>
+            </div>
+            <div class="Grid 3rdRow" id="G3-2">
+                <div class="Cell"><input id="57" typeof="number" min="1" max="9" ></div>
+                <div class="Cell"><input id="58" typeof="number" min="1" max="9" ></div>
+                <div class="Cell"><input id="59" typeof="number" min="1" max="9" ></div>
+                <div class="Cell"><input id="66" typeof="number" min="1" max="9" ></div>
+                <div class="Cell"><input id="67" typeof="number" min="1" max="9" ></div>
+                <div class="Cell"><input id="68" typeof="number" min="1" max="9" ></div>
+                <div class="Cell"><input id="75" typeof="number" min="1" max="9" ></div>
+                <div class="Cell"><input id="76" typeof="number" min="1" max="9" ></div>
+                <div class="Cell"><input id="77" typeof="number" min="1" max="9" ></div>
+            </div>
+            <div class="Grid 3rdRow" id="G3-3">
+                <div class="Cell"><input id="60" typeof="number" min="1" max="9" ></div>
+                <div class="Cell"><input id="61" typeof="number" min="1" max="9" ></div>
+                <div class="Cell"><input id="62" typeof="number" min="1" max="9" ></div>
+                <div class="Cell"><input id="69" typeof="number" min="1" max="9" ></div>
+                <div class="Cell"><input id="70" typeof="number" min="1" max="9" ></div>
+                <div class="Cell"><input id="71" typeof="number" min="1" max="9" ></div>
+                <div class="Cell"><input id="78" typeof="number" min="1" max="9" ></div>
+                <div class="Cell"><input id="79" typeof="number" min="1" max="9" ></div>
+                <div class="Cell"><input id="80" typeof="number" min="1" max="9" ></div>
+            </div>
         </div>
-        <div class="Grid 1stRow" id="G1-2">
-            <div class="Cell"><input id="9" typeof="number" min="1" max="9" placeholder="0"></div>
-            <div class="Cell"><input id="10" typeof="number" min="1" max="9" placeholder="0"></div>
-            <div class="Cell"><input id="11" typeof="number" min="1" max="9" placeholder="0"></div>
-            <div class="Cell"><input id="12" typeof="number" min="1" max="9" placeholder="0"></div>
-            <div class="Cell"><input id="13" typeof="number" min="1" max="9" placeholder="0"></div>
-            <div class="Cell"><input id="14" typeof="number" min="1" max="9" placeholder="0"></div>
-            <div class="Cell"><input id="15" typeof="number" min="1" max="9" placeholder="0"></div>
-            <div class="Cell"><input id="16" typeof="number" min="1" max="9" placeholder="0"></div>
-            <div class="Cell"><input id="17" typeof="number" min="1" max="9" placeholder="0"></div>
-        </div>
-        <div class="Grid 1stRow" id="G1-3">
-            <div class="Cell"><input id="18" typeof="number" min="1" max="9" placeholder="0"></div>
-            <div class="Cell"><input id="19" typeof="number" min="1" max="9" placeholder="0"></div>
-            <div class="Cell"><input id="20" typeof="number" min="1" max="9" placeholder="0"></div>
-            <div class="Cell"><input id="21" typeof="number" min="1" max="9" placeholder="0"></div>
-            <div class="Cell"><input id="22" typeof="number" min="1" max="9" placeholder="0"></div>
-            <div class="Cell"><input id="23" typeof="number" min="1" max="9" placeholder="0"></div>
-            <div class="Cell"><input id="24" typeof="number" min="1" max="9" placeholder="0"></div>
-            <div class="Cell"><input id="25" typeof="number" min="1" max="9" placeholder="0"></div>
-            <div class="Cell"><input id="26" typeof="number" min="1" max="9" placeholder="0"></div>
-        </div>
-        <div class="Grid 2ndRow" id="G2-1">
-            <div class="Cell"><input id="27" typeof="number" min="1" max="9" placeholder="0"></div>
-            <div class="Cell"><input id="28" typeof="number" min="1" max="9" placeholder="0"></div>
-            <div class="Cell"><input id="29" typeof="number" min="1" max="9" placeholder="0"></div>
-            <div class="Cell"><input id="30" typeof="number" min="1" max="9" placeholder="0"></div>
-            <div class="Cell"><input id="31" typeof="number" min="1" max="9" placeholder="0"></div>
-            <div class="Cell"><input id="32" typeof="number" min="1" max="9" placeholder="0"></div>
-            <div class="Cell"><input id="33" typeof="number" min="1" max="9" placeholder="0"></div>
-            <div class="Cell"><input id="34" typeof="number" min="1" max="9" placeholder="0"></div>
-            <div class="Cell"><input id="35" typeof="number" min="1" max="9" placeholder="0"></div>
-        </div>
-        <div class="Grid 2ndRow" id="G2-2">
-            <div class="Cell"><input id="36" typeof="number" min="1" max="9" placeholder="0"></div>
-            <div class="Cell"><input id="37" typeof="number" min="1" max="9" placeholder="0"></div>
-            <div class="Cell"><input id="38" typeof="number" min="1" max="9" placeholder="0"></div>
-            <div class="Cell"><input id="39" typeof="number" min="1" max="9" placeholder="0"></div>
-            <div class="Cell"><input id="40" typeof="number" min="1" max="9" placeholder="0"></div>
-            <div class="Cell"><input id="41" typeof="number" min="1" max="9" placeholder="0"></div>
-            <div class="Cell"><input id="42" typeof="number" min="1" max="9" placeholder="0"></div>
-            <div class="Cell"><input id="43" typeof="number" min="1" max="9" placeholder="0"></div>
-            <div class="Cell"><input id="44" typeof="number" min="1" max="9" placeholder="0"></div>
-        </div>
-        <div class="Grid 2ndRow" id="G2-3">
-            <div class="Cell"><input id="45" typeof="number" min="1" max="9" placeholder="0"></div>
-            <div class="Cell"><input id="46" typeof="number" min="1" max="9" placeholder="0"></div>
-            <div class="Cell"><input id="47" typeof="number" min="1" max="9" placeholder="0"></div>
-            <div class="Cell"><input id="48" typeof="number" min="1" max="9" placeholder="0"></div>
-            <div class="Cell"><input id="49" typeof="number" min="1" max="9" placeholder="0"></div>
-            <div class="Cell"><input id="50" typeof="number" min="1" max="9" placeholder="0"></div>
-            <div class="Cell"><input id="51" typeof="number" min="1" max="9" placeholder="0"></div>
-            <div class="Cell"><input id="52" typeof="number" min="1" max="9" placeholder="0"></div>
-            <div class="Cell"><input id="53" typeof="number" min="1" max="9" placeholder="0"></div>
-        </div>
-        <div class="Grid 3rdRow" id="G3-1">
-            <div class="Cell"><input id="54" typeof="number" min="1" max="9" placeholder="0"></div>
-            <div class="Cell"><input id="55" typeof="number" min="1" max="9" placeholder="0"></div>
-            <div class="Cell"><input id="56" typeof="number" min="1" max="9" placeholder="0"></div>
-            <div class="Cell"><input id="57" typeof="number" min="1" max="9" placeholder="0"></div>
-            <div class="Cell"><input id="58" typeof="number" min="1" max="9" placeholder="0"></div>
-            <div class="Cell"><input id="59" typeof="number" min="1" max="9" placeholder="0"></div>
-            <div class="Cell"><input id="60" typeof="number" min="1" max="9" placeholder="0"></div>
-            <div class="Cell"><input id="61" typeof="number" min="1" max="9" placeholder="0"></div>
-            <div class="Cell"><input id="62" typeof="number" min="1" max="9" placeholder="0"></div>
-        </div>
-        <div class="Grid 3rdRow" id="G3-2">
-            <div class="Cell"><input id="63" typeof="number" min="1" max="9" placeholder="0"></div>
-            <div class="Cell"><input id="64" typeof="number" min="1" max="9" placeholder="0"></div>
-            <div class="Cell"><input id="65" typeof="number" min="1" max="9" placeholder="0"></div>
-            <div class="Cell"><input id="66" typeof="number" min="1" max="9" placeholder="0"></div>
-            <div class="Cell"><input id="67" typeof="number" min="1" max="9" placeholder="0"></div>
-            <div class="Cell"><input id="68" typeof="number" min="1" max="9" placeholder="0"></div>
-            <div class="Cell"><input id="69" typeof="number" min="1" max="9" placeholder="0"></div>
-            <div class="Cell"><input id="70" typeof="number" min="1" max="9" placeholder="0"></div>
-            <div class="Cell"><input id="71" typeof="number" min="1" max="9" placeholder="0"></div>
-        </div>
-        <div class="Grid 3rdRow" id="G3-3">
-            <div class="Cell"><input id="72" typeof="number" min="1" max="9" placeholder="0"></div>
-            <div class="Cell"><input id="73" typeof="number" min="1" max="9" placeholder="0"></div>
-            <div class="Cell"><input id="74" typeof="number" min="1" max="9" placeholder="0"></div>
-            <div class="Cell"><input id="75" typeof="number" min="1" max="9" placeholder="0"></div>
-            <div class="Cell"><input id="76" typeof="number" min="1" max="9" placeholder="0"></div>
-            <div class="Cell"><input id="77" typeof="number" min="1" max="9" placeholder="0"></div>
-            <div class="Cell"><input id="78" typeof="number" min="1" max="9" placeholder="0"></div>
-            <div class="Cell"><input id="79" typeof="number" min="1" max="9" placeholder="0"></div>
-            <div class="Cell"><input id="80" typeof="number" min="1" max="9" placeholder="0"></div>
+        <div class="OuterContainer">
+            <div class="Grid">
+                <div class="Cell"  id="solution-0"></div>
+                <div class="Cell"  id="solution-1"></div>
+                <div class="Cell"  id="solution-2"></div>
+                <div class="Cell"  id="solution-3"></div>
+                <div class="Cell"  id="solution-4"></div>
+                <div class="Cell"  id="solution-5"></div>
+                <div class="Cell"  id="solution-6"></div>
+                <div class="Cell"  id="solution-7"></div>
+                <div class="Cell"  id="solution-8"></div>
+            </div>
+            <div class="Grid">
+                <div class="Cell"  id="solution-9"></div>
+                <div class="Cell"  id="solution-10"></div>
+                <div class="Cell"  id="solution-11"></div>
+                <div class="Cell"  id="solution-12"></div>
+                <div class="Cell"  id="solution-13"></div>
+                <div class="Cell"  id="solution-14"></div>
+                <div class="Cell"  id="solution-15"></div>
+                <div class="Cell"  id="solution-16"></div>
+                <div class="Cell"  id="solution-17"></div>
+            </div>
+            <div class="Grid">
+                <div class="Cell"  id="solution-18"></div>
+                <div class="Cell"  id="solution-19"></div>
+                <div class="Cell"  id="solution-20"></div>
+                <div class="Cell"  id="solution-21"></div>
+                <div class="Cell"  id="solution-22"></div>
+                <div class="Cell"  id="solution-23"></div>
+                <div class="Cell"  id="solution-24"></div>
+                <div class="Cell"  id="solution-25"></div>
+                <div class="Cell"  id="solution-26"></div>
+            </div>
+            <div class="Grid">
+                <div class="Cell"  id="solution-27"></div>
+                <div class="Cell"  id="solution-28"></div>
+                <div class="Cell"  id="solution-29"></div>
+                <div class="Cell"  id="solution-30"></div>
+                <div class="Cell"  id="solution-31"></div>
+                <div class="Cell"  id="solution-32"></div>
+                <div class="Cell"  id="solution-33"></div>
+                <div class="Cell"  id="solution-34"></div>
+                <div class="Cell"  id="solution-35"></div>
+            </div>
+            <div class="Grid">
+                <div class="Cell"  id="solution-36"></div>
+                <div class="Cell"  id="solution-37"></div>
+                <div class="Cell"  id="solution-38"></div>
+                <div class="Cell"  id="solution-39"></div>
+                <div class="Cell"  id="solution-40"></div>
+                <div class="Cell"  id="solution-41"></div>
+                <div class="Cell"  id="solution-42"></div>
+                <div class="Cell"  id="solution-43"></div>
+                <div class="Cell"  id="solution-44"></div>
+            </div>
+            <div class="Grid">
+                <div class="Cell"  id="solution-45"></div>
+                <div class="Cell"  id="solution-46"></div>
+                <div class="Cell"  id="solution-47"></div>
+                <div class="Cell"  id="solution-48"></div>
+                <div class="Cell"  id="solution-49"></div>
+                <div class="Cell"  id="solution-50"></div>
+                <div class="Cell"  id="solution-51"></div>
+                <div class="Cell"  id="solution-52"></div>
+                <div class="Cell"  id="solution-53"></div>
+            </div>
+            <div class="Grid">
+                <div class="Cell"  id="solution-54"></div>
+                <div class="Cell"  id="solution-55"></div>
+                <div class="Cell"  id="solution-56"></div>
+                <div class="Cell"  id="solution-57"></div>
+                <div class="Cell"  id="solution-58"></div>
+                <div class="Cell"  id="solution-59"></div>
+                <div class="Cell"  id="solution-60"></div>
+                <div class="Cell"  id="solution-61"></div>
+                <div class="Cell"  id="solution-62"></div>
+            </div>
+            <div class="Grid">
+                <div class="Cell"  id="solution-63"></div>
+                <div class="Cell"  id="solution-64"></div>
+                <div class="Cell"  id="solution-65"></div>
+                <div class="Cell"  id="solution-66"></div>
+                <div class="Cell"  id="solution-67"></div>
+                <div class="Cell"  id="solution-68"></div>
+                <div class="Cell"  id="solution-69"></div>
+                <div class="Cell"  id="solution-70"></div>
+                <div class="Cell"  id="solution-71"></div>
+            </div>
+            <div class="Grid">
+                <div class="Cell"  id="solution-72"></div>
+                <div class="Cell"  id="solution-73"></div>
+                <div class="Cell"  id="solution-74"></div>
+                <div class="Cell"  id="solution-75"></div>
+                <div class="Cell"  id="solution-76"></div>
+                <div class="Cell"  id="solution-77"></div>
+                <div class="Cell"  id="solution-78"></div>
+                <div class="Cell"  id="solution-79"></div>
+                <div class="Cell"  id="solution-80"></div>
+            </div>
+
         </div>
     </div>
     <div class="SolveButton">
-        <button id="ButtonForSolving">Solve Puzzle</button>
+        <button id="ButtonForSolving" onclick="MakeJaggedArrayAndFetch()">Solve Puzzle</button>
     </div>
     <script>
-        function MakeJaggedArray() {
 
+        // looping through the div ids to get the content of the divs, turning it into a jagged array for JSON
+        async function MakeJaggedArrayAndFetch() {
+            var numbersForSolving = [[], [], [], [], [], [], [], [], []];
+            var input;
 
+            for (let i = 0; i < 81; i++) {
 
+                input = document.getElementById(i).value;
+                input = Number(input);
+                //checks that the input is an int between 0 and 9
+                if (!checkValidNumber(i)) {
+                    return;
+                }
+                else if (i < 9) {
+                    numbersForSolving[0][i] = input;
+                }
+                else if (i > 8 && i < 18) {
+                    numbersForSolving[1][i % 9] = input;
+                }
+                else if (i > 17 && i < 27) {
+                    numbersForSolving[2][i % 9] = input;
+                }
+                else if (i > 26 && i < 36) {
+                    numbersForSolving[3][i % 9] = input;
+                }
+                else if (i > 35 && i < 45) {
+                    numbersForSolving[4][i % 9] = input;
+                }
+                else if (i > 44 && i < 54) {
+                    numbersForSolving[5][i % 9] = input;
+                }
+                else if (i > 53 && i < 63) {
+                    numbersForSolving[6][i % 9] = input;
+                }
+                else if (i > 62 && i < 72) {
+                    numbersForSolving[7][i % 9] = input;
+                }
+                else if (i > 71 && i < 81) {
+                    numbersForSolving[8][i % 9] = input;
+                }
+            }
+            const solvedPuzzle = await sendToApi(numbersForSolving);
+            fillSolvedGrid(solvedPuzzle);
         }
 
+        //checks its an int between 0 and 9
+        function checkValidNumber(numberIn) {
+        let intIn = Number(document.getElementById(numberIn).value);
+
+            if (intIn == "NaN" || intIn > 9 || intIn < 0) {
+                window.alert("please enter a whole number between 0 and 9");
+                return false;
+            }
+            if (!Number.isInteger(intIn)) {
+                window.alert("please enter a whole number between 0 and 9");
+                return false;
+            }
+            else {
+                return true;
+            }
+        }
+        // fetching from API
+        async function sendToApi(numbersForSolving) {
+            const response = await fetch("/api/sudokusolver",{
+                method: "POST",
+                headers: { "Content-Type": "application/json" },
+                body: JSON.stringify({ unsolvedPuzzle: numbersForSolving })
+             });
+            if (!response.ok) {
+                const errorMessage = await response.text();
+                throw new Error(`API returned ${response.status}: ${errorMessage}`);
+            }
+            const puzzleResponse = await response.json();
+            return puzzleResponse.solvedPuzzle;
+        }
+
+        function fillSolvedGrid(solvedPuzzle) {
+            document.getElementById("solution-0").textContent = solvedPuzzle[0][0];
+            document.getElementById("solution-1").textContent = solvedPuzzle[0][1];
+            document.getElementById("solution-2").textContent = solvedPuzzle[0][2];
+            document.getElementById("solution-9").textContent = solvedPuzzle[0][3];
+            document.getElementById("solution-10").textContent = solvedPuzzle[0][4];
+            document.getElementById("solution-11").textContent = solvedPuzzle[0][5];
+            document.getElementById("solution-18").textContent = solvedPuzzle[0][6];
+            document.getElementById("solution-19").textContent = solvedPuzzle[0][7];
+            document.getElementById("solution-20").textContent = solvedPuzzle[0][8];
+            document.getElementById("solution-3").textContent = solvedPuzzle[1][0];
+            document.getElementById("solution-4").textContent = solvedPuzzle[1][1];
+            document.getElementById("solution-5").textContent = solvedPuzzle[1][2];
+            document.getElementById("solution-12").textContent = solvedPuzzle[1][3];
+            document.getElementById("solution-13").textContent = solvedPuzzle[1][4];
+            document.getElementById("solution-14").textContent = solvedPuzzle[1][5];
+            document.getElementById("solution-21").textContent = solvedPuzzle[1][6];
+            document.getElementById("solution-22").textContent = solvedPuzzle[1][7];
+            document.getElementById("solution-23").textContent = solvedPuzzle[1][8];
+            document.getElementById("solution-6").textContent = solvedPuzzle[2][0];
+            document.getElementById("solution-7").textContent = solvedPuzzle[2][1];
+            document.getElementById("solution-8").textContent = solvedPuzzle[2][2];
+            document.getElementById("solution-15").textContent = solvedPuzzle[2][3];
+            document.getElementById("solution-16").textContent = solvedPuzzle[2][4];
+            document.getElementById("solution-17").textContent = solvedPuzzle[2][5];
+            document.getElementById("solution-24").textContent = solvedPuzzle[2][6];
+            document.getElementById("solution-25").textContent = solvedPuzzle[2][7];
+            document.getElementById("solution-26").textContent = solvedPuzzle[2][8];
+            document.getElementById("solution-27").textContent = solvedPuzzle[3][0];
+            document.getElementById("solution-28").textContent = solvedPuzzle[3][1];
+            document.getElementById("solution-29").textContent = solvedPuzzle[3][2];
+            document.getElementById("solution-36").textContent = solvedPuzzle[3][3];
+            document.getElementById("solution-37").textContent = solvedPuzzle[3][4];
+            document.getElementById("solution-38").textContent = solvedPuzzle[3][5];
+            document.getElementById("solution-45").textContent = solvedPuzzle[3][6];
+            document.getElementById("solution-46").textContent = solvedPuzzle[3][7];
+            document.getElementById("solution-47").textContent = solvedPuzzle[3][8];
+            document.getElementById("solution-30").textContent = solvedPuzzle[4][0];
+            document.getElementById("solution-31").textContent = solvedPuzzle[4][1];
+            document.getElementById("solution-32").textContent = solvedPuzzle[4][2];
+            document.getElementById("solution-39").textContent = solvedPuzzle[4][3];
+            document.getElementById("solution-40").textContent = solvedPuzzle[4][4];
+            document.getElementById("solution-41").textContent = solvedPuzzle[4][5];
+            document.getElementById("solution-48").textContent = solvedPuzzle[4][6];
+            document.getElementById("solution-49").textContent = solvedPuzzle[4][7];
+            document.getElementById("solution-50").textContent = solvedPuzzle[4][8];
+            document.getElementById("solution-33").textContent = solvedPuzzle[5][0];
+            document.getElementById("solution-34").textContent = solvedPuzzle[5][1];
+            document.getElementById("solution-35").textContent = solvedPuzzle[5][2];
+            document.getElementById("solution-42").textContent = solvedPuzzle[5][3];
+            document.getElementById("solution-43").textContent = solvedPuzzle[5][4];
+            document.getElementById("solution-44").textContent = solvedPuzzle[5][5];
+            document.getElementById("solution-51").textContent = solvedPuzzle[5][6];
+            document.getElementById("solution-52").textContent = solvedPuzzle[5][7];
+            document.getElementById("solution-53").textContent = solvedPuzzle[5][8];
+            document.getElementById("solution-54").textContent = solvedPuzzle[6][0];
+            document.getElementById("solution-55").textContent = solvedPuzzle[6][1];
+            document.getElementById("solution-56").textContent = solvedPuzzle[6][2];
+            document.getElementById("solution-63").textContent = solvedPuzzle[6][3];
+            document.getElementById("solution-64").textContent = solvedPuzzle[6][4];
+            document.getElementById("solution-65").textContent = solvedPuzzle[6][5];
+            document.getElementById("solution-72").textContent = solvedPuzzle[6][6];
+            document.getElementById("solution-73").textContent = solvedPuzzle[6][7];
+            document.getElementById("solution-74").textContent = solvedPuzzle[6][8];
+            document.getElementById("solution-57").textContent = solvedPuzzle[7][0];
+            document.getElementById("solution-58").textContent = solvedPuzzle[7][1];
+            document.getElementById("solution-59").textContent = solvedPuzzle[7][2];
+            document.getElementById("solution-66").textContent = solvedPuzzle[7][3];
+            document.getElementById("solution-67").textContent = solvedPuzzle[7][4];
+            document.getElementById("solution-68").textContent = solvedPuzzle[7][5];
+            document.getElementById("solution-75").textContent = solvedPuzzle[7][6];
+            document.getElementById("solution-76").textContent = solvedPuzzle[7][7];
+            document.getElementById("solution-77").textContent = solvedPuzzle[7][8];
+            document.getElementById("solution-60").textContent = solvedPuzzle[8][0];
+            document.getElementById("solution-61").textContent = solvedPuzzle[8][1];
+            document.getElementById("solution-62").textContent = solvedPuzzle[8][2];
+            document.getElementById("solution-69").textContent = solvedPuzzle[8][3];
+            document.getElementById("solution-70").textContent = solvedPuzzle[8][4];
+            document.getElementById("solution-71").textContent = solvedPuzzle[8][5];
+            document.getElementById("solution-78").textContent = solvedPuzzle[8][6];
+            document.getElementById("solution-79").textContent = solvedPuzzle[8][7];
+            document.getElementById("solution-80").textContent = solvedPuzzle[8][8];
+        }
+       
     </script>
 </body>
 </html>
